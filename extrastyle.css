@@ -5,6 +5,7 @@
 }
 #home{
     background: url('img/ted1.jpg');
+    background-attachment: fixed;
 }
 .heading{
     font-size: 84px;
