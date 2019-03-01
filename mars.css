@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+    transition: 300ms;
+    font-family: 'Comfortaa', cursive;
+}
+
+body{ background: #fdfde8; }
+
+.primary{ background: #193c50; color: #ffe100; }
+.secondary{ background: #26a69a; color: #ffe100; }
+.alert{ background: #de1738; color: #fff; }
+.success{ background: #008000; color: #FFF; }
+.fullscreen{
+    width: 101%;
+    height: 101%;
+    margin: -0.5%;
+}
+
+.right{float: right;}
+.left{float: left;}
+.row{
+    margin-left: auto;
+    margin-right: auto;
+    width: 96%;
+    overflow-y: hidden;
+}
+
+.col{display: inline-block;}
+
+@media (max-width: 500px) {
+    .large1,.large2,.large3,.large4,.large5,.large6,.large7,.large8,.large9,.large10,.large11,.large12{width: 100%; }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+    .row{display: flex;}
+    .medium2{width: 15%; flex: 0;}
+    .medium4{width: 30%; }
+    .medium6{width: 45%; }
+    .medium8{width: 60%; }
+    .medium10{width: 85%; }
+    .medium12{width: 95%; }
+}
+
+@media (min-width: 1000px) {
+    .row{display: flex;}
+    .large1{width: 8.33333%; }
+    .large2{width: 16.66667%; }
+    .large3{width: 24%; }
+    .large4{width: 30%; }
+    .large5{width: 41.66667%; }
+    .large6{width: 48%; }
+    .large7{width: 58.33333%; }
+    .large8{width: 66.66667%; }
+    .large9{width: 73%; }
+    .large10{width: 83.33333%; }
+    .large11{width: 91.66667%; }
+    .large12{width: 96%; }
+}
+
+
+label{
+    font-weight: 600;
+}
+
+input[type=text],input[type=number],input[type=password]{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #193c50;
+    width: 80%;
+    font-size: 20px;
+}
+
+input[type=text]:focus,input[type=number]:focus,input[type=password]:focus{
+    border-bottom: 2px solid #ffe100;
+}
+
+select{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #193c50;
+    font-size: 16px;
+}
+select.date{ width: 60px; }
+select.month{ width: 80px; }
+select.year{ width: 65px; }
+
+.check{
+    display: block;
+    position: relative;
+    user-select: none;
+}
+
+.check input{
+    z-index: 1;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+}
+
+.checkmark{
+    color: transparent;
+    z-index: 0;
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #193c50;
+}
+
+.check input:checked ~ .checkmark{
+    background: #193c50;
+    color: #ffe100;
+    font-weight: bold;
+    border: 2px solid #ffe100;
+}
+
+.radiomark{
+    color: transparent;
+    z-index: 0;
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 90px;
+    border: 2px solid #193c50;
+}
+
+.check input:checked ~ .radiomark{
+    background: #193c50;
+    color: #ffe100;
+    font-weight: bold;
+    border: 2px solid #ffe100;
+}
+
+.switch{
+    width: 50px;
+    height: 25px;
+    background: #eee;
+    border: 2px solid #193c50;
+}
+
+.switch input{
+    z-index: 1;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 48px;
+}
+
+.toggle{
+    position: absolute;
+    background: #ffe100;
+    z-index: 0;
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    margin-top: 1px;
+    margin-left: 1px;
+}
+
+.switch input:checked ~ .toggle{
+    background: #193c50;
+    transform: translateX(22px);
+}
+
+button{
+    border: none;
+    border-radius: 3px;
+    display: block;
+}
+button.primary:focus{
+    border: 2px dashed #193c50 ;
+    background: #26a69a ;
+    color: #000 ;
+}
+button.secondary:focus{
+    border: 2px dashed #000 ;
+    color: #000 ;
+    background: #ffe100 ;
+}
+
+.small{ min-width: 80px; height: 40px; font-size: 16px;}
+.large{ min-width: 160px; height: 80px; font-size: 32px;}
+.circular{ border-radius: 90px;}
+
+.tab{
+    border-radius: 0;
+    border: none;
+    width:100px;
+    height: 50px;
+    font-size: 24px;
+}
+.tab:hover{
+    border: 2px dashed #ffe100;
+}
+.tab.active{
+    background: #ffe100;
+    color: #000;
+}
+button.primary.tab:focus{
+    background: #ffe100;
+    color: #000;
+}
+.floattab{
+    border-radius: 360px;
+    border: none;
+    height: 50px;
+    font-size: 4px;
+    min-width: 50px;
+    background: red;
+    color: red;
+    margin: 2px;
+}
+.floattab.booknow{
+    background: #000;
+    color: #000;
+}
+.floattab:hover{
+    font-size: 24px;
+    color: wheat;
+}
+@media (min-width: 700px) {
+    .topnav{
+        position: fixed;
+        top:0;
+        z-index: 9;
+        margin-left: -1%;
+        width: 100.38%;
+        background: transparent;
+        height: 60px;
+        padding-top: 5px;
+    }
+    .tab.menu{color: #FFF;}
+    .sidenav{display: none;}
+    .floatnav{
+        position : absolute;
+        z-index: 2;
+        left: 50px;
+        top: 20%;
+    }
+}
+@media (max-width: 700px) {
+    .topnav{display: none;}
+    li{ list-style-type: none; }
+    .sidenav{
+        position: fixed;
+        top:0;
+        z-index: 9;
+        margin-left: -2.5%;
+        width: 100.5%;
+        background: #26a69a;
+    }
+    .mico{
+        width: 50px;
+        height: 50px;
+        margin-right: 2%;
+        background: transparent;
+    }
+    .mico input{
+    z-index: 1;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    }
+    #nav1{display: none;}
+    .mtab{
+        padding: 5px;
+        padding-left: 45px;
+    }
+}
+
+.xlarge{
+    min-width: 250px;
+    height: 80px;
+    font-size: 36px;
+}
+
+.center{
+    display: block;
+    margin: auto;
+}

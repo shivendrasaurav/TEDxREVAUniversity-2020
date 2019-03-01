@@ -1,0 +1,26 @@
+.row{
+    margin-left: 120px;
+    display: inline-block;
+    width: 80%;
+}
+#home{
+    background: url('img/ted1.jpg');
+}
+.heading{
+    font-size: 84px;
+    color: #FFF;
+    display: inline-block;
+}
+.heading.red{
+    color: red;
+}
+.date{
+    border: #FFF solid 4px;
+    color: white;
+    font-size: 48px;
+    width: 500px;
+    text-align: center;
+}
+.description{
+    font-size: 24px;
+}
