@@ -1,26 +1,46 @@
-.row{
-    margin-left: 120px;
+
+    .padleft{
+        margin-left: 120px;
+        display: inline-block;
+        width: 80%;
+    }
+    .heading{
+        font-size: 84px;
+        color: #FFF;
+        display: inline-block;
+    }        
+    .date{
+        border: #FFF solid 4px;
+        color: white;
+        font-size: 48px;
+        width: 500px;
+        text-align: center;
+    }
+
+@media (max-width: 700px) {
+.date{
+    border: #FFF solid 4px;
+    color: white;
+    font-size: 28px;
+    width: 60%;
+    text-align: center;
+}    
+.padleft{
+    margin-left: 10px;
+}
+.heading{
+    font-size: 36px;
+    color: #FFF;
     display: inline-block;
-    width: 80%;
+}
 }
 #home{
     background: url('img/ted1.jpg');
     background-attachment: fixed;
-}
-.heading{
-    font-size: 84px;
-    color: #FFF;
-    display: inline-block;
+    height: 104%;
 }
 .heading.red{
     color: red;
-}
-.date{
-    border: #FFF solid 4px;
-    color: white;
-    font-size: 48px;
-    width: 500px;
-    text-align: center;
 }
 .description{
     font-size: 24px;

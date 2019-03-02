@@ -6,6 +6,7 @@
 
 body{ background: #fdfde8; }
 
+.inverted{background: #000; color: #FFF;}
 .primary{ background: #193c50; color: #ffe100; }
 .secondary{ background: #26a69a; color: #ffe100; }
 .alert{ background: #de1738; color: #fff; }
@@ -29,6 +30,11 @@ body{ background: #fdfde8; }
 
 @media (max-width: 500px) {
     .large1,.large2,.large3,.large4,.large5,.large6,.large7,.large8,.large9,.large10,.large11,.large12{width: 100%; }
+    .fullscreen{
+        width: 104%;
+        height: auto;
+        margin:-2%;
+    }
 }
 
 @media (min-width: 501px) and (max-width: 1000px) {
@@ -244,7 +250,7 @@ button.primary.tab:focus{
     }
 }
 @media (max-width: 700px) {
-    .topnav{display: none;}
+    .topnav,.floatnav{display: none;}
     li{ list-style-type: none; }
     .sidenav{
         position: fixed;
@@ -252,7 +258,6 @@ button.primary.tab:focus{
         z-index: 9;
         margin-left: -2.5%;
         width: 100.5%;
-        background: #26a69a;
     }
     .mico{
         width: 50px;
@@ -284,4 +289,10 @@ button.primary.tab:focus{
 .center{
     display: block;
     margin: auto;
+}
+.followicon{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+
 }
