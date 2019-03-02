@@ -117,3 +117,10 @@
   .active, .dot:hover {
     background-color: red;
   }
+.sponsor{
+  height: 300px;
+  width: 300px;
+  display: block;
+  margin: auto;
+  padding: 4px;
+}

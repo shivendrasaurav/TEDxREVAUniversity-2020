@@ -315,3 +315,12 @@ a,a:visited,a:active{color:initial; text-decoration:none;}
     margin: auto;
     padding: 4px;
 }
+.name{
+    padding: 4px;
+    display: inline;
+    margin: 4px;
+}
+.name:hover{
+    background: red;
+    color: #FFF;
+}
