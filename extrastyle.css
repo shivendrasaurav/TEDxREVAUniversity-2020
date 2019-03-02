@@ -17,7 +17,7 @@
         text-align: center;
     }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .bnbut{
         position: fixed;
         bottom: 40px;
@@ -42,12 +42,13 @@
         color: #FFF;
         display: inline-block;
     }
+    a,a:hover,a:visited{color:#FFF;}
 }
-.bnbut{display: none;}
-    #home{
-    background: url('img/ted1.jpg');
-    background-attachment: fixed;
-    height: 104%;
+@media (min-width:600px){.bnbut{display: none;}}
+#home{
+  background: url('img/ted1.jpg');
+  background-attachment: fixed;
+  height: 104%;
 }
 .heading.red{
     color: red;
@@ -114,5 +115,5 @@
   
   /* Add a background color to the active dot/circle */
   .active, .dot:hover {
-    background-color: #717171;
+    background-color: red;
   }

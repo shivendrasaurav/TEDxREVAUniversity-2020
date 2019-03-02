@@ -31,7 +31,7 @@ body{ background: #fdfde8; }
 @media (max-width: 500px) {
     .large1,.large2,.large3,.large4,.large5,.large6,.large7,.large8,.large9,.large10,.large11,.large12{width: 100%; }
     .fullscreen{
-        width: 104%;
+        min-width: 104%;
         height: auto;
         margin:-2%;
     }
@@ -39,12 +39,12 @@ body{ background: #fdfde8; }
 
 @media (min-width: 501px) and (max-width: 1000px) {
     .row{display: flex;}
-    .medium2{width: 15%; flex: 0;}
-    .medium4{width: 30%; }
-    .medium6{width: 45%; }
-    .medium8{width: 60%; }
-    .medium10{width: 85%; }
-    .medium12{width: 95%; }
+    .large1,.large2{width: 15%; flex: 0;}
+    .large3,.large4{width: 30%; }
+    .large5,.large6{width: 45%; }
+    .large7,.large8{width: 60%; }
+    .large9,.large10{width: 85%; }
+    .large11,.large12{width: 95%; }
 }
 
 @media (min-width: 1000px) {
@@ -297,3 +297,4 @@ button.primary.tab:focus{
     border-radius: 100%;
 
 }
+a,a:visited,a:active{color:initial; text-decoration:none;}
