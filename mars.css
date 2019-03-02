@@ -324,3 +324,10 @@ a,a:visited,a:active{color:initial; text-decoration:none;}
     background: red;
     color: #FFF;
 }
+.modalcontainer{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
