@@ -302,15 +302,15 @@ a,a:visited,a:active{color:initial; text-decoration:none;}
 .polaroid{
     display: block;
     margin: auto;
-    width: 84%;
+    width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .polaroid:hover{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
 }
 .person{
-    height: 400px;
-    width: 300px;
+    height: 50%;
+    width: 80%;
     display: block;
     margin: auto;
     padding: 4px;
@@ -330,4 +330,11 @@ a,a:visited,a:active{color:initial; text-decoration:none;}
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 5;
+    background: #000;
+}
+.modalcontent{
+    width: 80%;
+    height: auto;
+    background: #FFF;
 }
