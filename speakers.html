@@ -1,3 +1,138 @@
 <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARS</title>
+    <link href="mars.css" rel="stylesheet" type="text/css">
+    <link href="extrastyle.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <script>
+        var counter=0;
+        function sidenavfunc(){
+            counter++;
+            if(counter%2==0)
+                hidesidenav();
+            else
+                showsidenav();
+        }
+        function showsidenav(){
+            document.getElementById("nav1").style.display=("block");
+            document.getElementById("switch").innerHTML=("X");
+        }
+        function hidesidenav(){
+            document.getElementById("nav1").style.display=("none");
+            document.getElementById("switch").innerHTML=("=");
+        }
+    </script>
+    </head>
+    <body onload="hidesidenav();" style="background:#f7f1de">
+        <div class="floatnav">
+            <a href="https://www.townscript.com/e/tedxrevauniversity-433121"><button class="floattab booknow">Book Now</button></a>
+            <a href="sponsors.html"><button class="floattab">Sponsors</button></a>
+            <a href="index.html"><button class="floattab">Home</button></a>
+            <a href="team.html"><button class="floattab">Team</button></a>
+            <a href="#contact"><button class="floattab">Contact Us</button></a>
+        </div>
+        <div class="sidenav inverted">
+            <div class="row"><span class="left">&nbsp;&nbsp;</span><button id="switch" class="mico inverted left" onclick="sidenavfunc();">=</button>        
+            </div>
+            <div id="nav1" class="row">
+                <a href="sponsors.html"><div class="mtab" style="width:80%;">Sponsors</div></a>
+                <a href="index.html"><div class="mtab" style="width:80%;" onclick="hidesidenav();">Home</div></a>
+                <a href="team.html"><div class="mtab" style="width:80%;" onclick="hidesidenav();">Team</div></a>
+                <a href="#contact"><div class="mtab" style="width:80%;" onclick="hidesidenav();">Contact Us</div></a>                       
+            </div>
+        </div>
+        <section class="fullscreen" id="speakers"><br>
+            <p class="heading padleft red">Speakers</p>
+            <div class="col large2"></div>
+            <div class="col large3">
+                <div class="polaroid">
+                    <img src="img/speakers/SwatiBondia.jpg" class="person">
+                    <h2 style="text-align:center; padding-bottom: 10px;">Ms. Swati Bondia</h2>
+                </div>
+            </div>
+            <div class="col large3">
+                <div class="polaroid">
+                    <img src="img/speakers/CaptainNaveen.jpg" class="person">
+                    <h3 style="text-align:center; padding-bottom: 10px;">Captain Naveen Nagappa</h3>
+                </div>
+            </div>
+            <div class="col large3">
+                <div class="polaroid">
+                    <img src="img/speakers/aakash.jpg" class="person">
+                    <h2 style="text-align:center; padding-bottom: 10px;">Aakash Nambiar</h2>
+                </div>
+            </div>
 
+
+            <div class="col large2"></div>
+            <div class="col large3">
+                <div class="polaroid">
+                    <img src="img/speakers/RJSmitha.PNG" class="person">
+                    <h2 style="text-align:center; padding-bottom: 10px;">RJ Smitha</h2>
+                </div>
+            </div>
+            <div class="col large3">
+                <div class="polaroid">
+                    <img src="img/speakers/neerajchandra.jpeg" class="person">
+                    <h2 style="text-align:center; padding-bottom: 10px;">Neeraj Chandra</h2>
+                </div>
+            </div>
+            <div class="col large3">
+                <div class="polaroid">
+                    <img src="img/speakers/RoopaDivakar.jpeg" class="person">
+                    <h2 style="text-align:center; padding-bottom: 10px;">Roopa Divakar Moudgil</h2>
+                </div>
+            </div>
+
+
+            <div class="col large2"></div>
+            <div class="col large3">
+                <div class="polaroid">
+                    <img src="img/speakers/dr.alikhwaja.jpeg" class="person">
+                    <h2 style="text-align:center; padding-bottom: 10px;">Dr. Ali Khwaja</h2>
+                </div>
+            </div>
+            <div class="col large3">
+                <div class="polaroid">
+                    <img src="img/speakers/AnjuMaudgalKadam.jpg" class="person">
+                    <h2 style="text-align:center; padding-bottom: 10px;">Anju Maugdal Kadam</h2>
+                </div>
+            </div>
+            <div class="col large3">
+                <div class="polaroid">
+                    <img src="img/speakers/jayanti.jpeg" class="person">
+                    <h2 style="text-align:center; padding-bottom: 10px;">Jayanti Kallam</h2>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="fullscreen primary" id="contact">
+                <h1 class="heading padleft">Get In Touch</h1>
+                <div class="col large6">
+                    <a href="faq.pdf"><h1 class="padleft" style="color:#FFF;">Frequently Asked Questions</h1><br></a>
+                    <a href="faq.pdf"><h1 class="padleft" style="color:#FFF;">Privacy Policy</h1></a><br>
+                    <h1 class="padleft" style="color:#FFF;">Schedule</h1><br>
+                    <h1 class="padleft" style="color:#FFF;">Follow Us On</h1><br>
+                    <div class="col large2"></div>
+                    &nbsp;&nbsp;<div class="col"><img src="img/fb.png" class="followicon" /></div>&nbsp;&nbsp;&nbsp;
+                    <div class="col"><img src="img/tw.png" class="followicon" /></div>&nbsp;&nbsp;&nbsp;
+                    <div class="col"><img src="img/ig.png" class="followicon" /></div>
+                </div>
+                <div class="col large6">            
+                    <div class="padleft">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15542.89373821591!2d77.6346617!3d13.1166989!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdee225fe28f600f6!2sREVA+University!5e0!3m2!1sen!2sin!4v1522677320198" style="border: none; border-radius:10px; height: 50%; width: 100%; " allowfullscreen="yes"></iframe>
+                     </div>
+                </div><br><br><br><br>
+                <div class="alert" style="margin-top:2%">
+                <div class="col large7">
+                        <h3 style="color: aliceblue" class="padleft">This independent TEDx event is operated under license from TED.</h3>
+                </div>
+                <div class="col large4">
+                        <h3 style="color: aliceblue" class="padleft">&copy; TEDxREVAUniversity 2019</h3>
+                </div>
+                </div>
+        </section>
+    </body>
 </html>

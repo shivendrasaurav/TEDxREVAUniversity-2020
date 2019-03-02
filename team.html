@@ -1,3 +1,46 @@
 <html>
-
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARS</title>
+    <link href="mars.css" rel="stylesheet" type="text/css">
+    <link href="extrastyle.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <script>
+        var counter=0;
+        function sidenavfunc(){
+            counter++;
+            if(counter%2==0)
+                hidesidenav();
+            else
+                showsidenav();
+        }
+        function showsidenav(){
+            document.getElementById("nav1").style.display=("block");
+            document.getElementById("switch").innerHTML=("X");
+        }
+        function hidesidenav(){
+            document.getElementById("nav1").style.display=("none");
+            document.getElementById("switch").innerHTML=("=");
+        }
+    </script>
+    </head>
+    <body onload="hidesidenav();" style="background:#f7f1de">
+        <div class="floatnav">
+            <a href="https://www.townscript.com/e/tedxrevauniversity-433121"><button class="floattab booknow">Book Now</button></a>
+            <a href="sponsors.html"><button class="floattab">Sponsors</button></a>
+            <a href="index.html"><button class="floattab">Home</button></a>
+            <a href="speakers.html"><button class="floattab">Speakers</button></a>
+            <a href="#contact"><button class="floattab">Contact Us</button></a>
+        </div>
+        <div class="sidenav inverted">
+            <div class="row"><span class="left">&nbsp;&nbsp;</span><button id="switch" class="mico inverted left" onclick="sidenavfunc();">=</button>        
+            </div>
+            <div id="nav1" class="row">
+                <a href="sponsors.html"><div class="mtab" style="width:80%;">Sponsors</div></a>
+                <a href="index.html"><div class="mtab" style="width:80%;" onclick="hidesidenav();">Home</div></a>
+                <a href="speakers.html"><div class="mtab" style="width:80%;" onclick="hidesidenav();">Speakers</div></a>
+                <a href="#contact"><div class="mtab" style="width:80%;" onclick="hidesidenav();">Contact Us</div></a>                       
+            </div>
+        </div>
+    </body>
 </html>
