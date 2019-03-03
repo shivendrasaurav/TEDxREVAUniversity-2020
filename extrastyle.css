@@ -16,8 +16,28 @@
         width: 500px;
         text-align: center;
     }
+@media (max-width: 360px) {
+      .heading{font-size:26px;}
+      .date{font-size: 22px;}
+}
+@media (min-width: 377px) and (max-width:600px) {
+  .heading{font-size:36px;}
+  .date{font-size: 32px;}
+}
+@media (min-width: 361px) and (max-width:376px) {
+  .heading{font-size:32px;}
+  .date{font-size: 28px;}
+}
 
 @media (max-width: 600px) {
+    .backvid{
+      width: 96%;
+      height:100%;
+      z-index: 0;
+      position: absolute;
+      top:0;
+      left:0;
+    }
     .bnbut{
         position: fixed;
         bottom: 40px;
@@ -30,7 +50,6 @@
     .date{
         border: #FFF solid 4px;
         color: white;
-        font-size: 28px;
         width: 60%;
         text-align: center;
     }    
@@ -38,7 +57,6 @@
         margin-left: 10px;
     }
     .heading{
-        font-size: 36px;
         color: #FFF;
         display: inline-block;
     }
@@ -123,4 +141,12 @@
   display: block;
   margin: auto;
   padding: 4px;
+}
+.backvid{
+  min-width:100%;
+  min-height:100%;
+  z-index: 0;
+  position: absolute;
+  top:0;
+  left:0;
 }
