@@ -323,7 +323,7 @@ a,a:visited,a:active{color:initial; text-decoration:none;}
 }
 .person{
     height: 300px;
-    width: 350px;
+    width: 80%;
     display: block;
     margin: auto;
     padding: 4px;
