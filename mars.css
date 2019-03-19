@@ -34,6 +34,7 @@ body{ background: #fdfde8; }
         min-width: 104%;
         height: auto;
         margin:-2%;
+        padding: 15px;
     }
 }
 
