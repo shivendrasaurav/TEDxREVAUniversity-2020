@@ -287,7 +287,7 @@ button.primary.tab:focus{
         display: none;
         padding: 20px;
         font-size: 28px;
-        padding-bottom: 100%;
+        padding-bottom: 200%;
         text-align: center;
     }
     .mtab{
