@@ -3,28 +3,28 @@
         <script>
                 var slideIndex = 1;
                 showSlides(slideIndex);
-                
+
                 function plusSlides(n) {
                   showSlides(slideIndex += n);
                 }
-                
+
                 function currentSlide(n) {
                   showSlides(slideIndex = n);
                 }
-                
+
                 function showSlides(n) {
                   var i;
                   var slides = document.getElementsByClassName("mySlides");
                   var dots = document.getElementsByClassName("dot");
-                  if (n > slides.length) {slideIndex = 1}    
+                  if (n > slides.length) {slideIndex = 1}
                   if (n < 1) {slideIndex = slides.length}
                   for (i = 0; i < slides.length; i++) {
-                      slides[i].style.display = "none";  
+                      slides[i].style.display = "none";
                   }
                   for (i = 0; i < dots.length; i++) {
                       dots[i].className = dots[i].className.replace(" active", "");
                   }
-                  slides[slideIndex-1].style.display = "block";  
+                  slides[slideIndex-1].style.display = "block";
                   dots[slideIndex-1].className += " active";
                 }
                 </script>
@@ -68,7 +68,7 @@
         <a href="#contact"><button class="floattab">Contact Us</button></a>
     </div>
     <div class="sidenav inverted">
-        <div class="row"><span class="left">&nbsp;&nbsp;</span><button id="switch" style="font-size:28px;" class="mico inverted left" onclick="sidenavfunc();">=</button>        
+        <div class="row"><span class="left">&nbsp;&nbsp;</span><button id="switch" style="font-size:28px;" class="mico inverted left" onclick="sidenavfunc();">=</button>
         </div>
         <div id="nav1">
             <a href="sponsors.html"><div class="mtab">Sponsors</div></a>
@@ -77,7 +77,7 @@
             <a href="#fables"><div class="mtab" onclick="hidesidenav();">Fables</div></a>
             <a href="#speakers"><div class="mtab" onclick="hidesidenav();">Speakers</div></a>
             <a href="#team"><div class="mtab" onclick="hidesidenav();">Team</div></a>
-            <a href="#contact"><div class="mtab" onclick="hidesidenav();">Contact Us</div></a>                       
+            <a href="#contact"><div class="mtab" onclick="hidesidenav();">Contact Us</div></a>
         </div>
     </div>
 
@@ -107,7 +107,7 @@
                         and Bill Gates.
             </p>
         </div>
-      
+
         <div class="mySlides padleft">
                 <h1 class="heading red">About TEDx</h1>
                 <p class="description">
@@ -120,24 +120,24 @@
                             but individual TEDx events are self-organized.
                 </p>
         </div>
-      
+
         <div class="mySlides padleft">
                 <h1 class="heading red">About TEDxREVAUniversity</h1>
           <p class="description">
                 TEDxREVAUniversity is an independently organised TED event. This TEDx event is an collective endeavour of students from different schools of REVA University. The aim of this event is to share great stories and diversified ideas to our community of 10,000+ students, faculties and staff in order to inspire them to innovate and to bring the change they want to see in the world. The event will take place in the newly renovated, state of the art, Kuvempu Auditorium in REVA University, Bengaluru. The event will feature a number of speakers from various disciplines and cultures, who will narrate their stories and share their ideas with people who seek a deeper understanding of the world. We believe and promote TED’s mission of 'spreading ideas’ and their agenda to make great ideas accessible and spark conversation. TEDxREVAUniversity will present ideas which are powerful enough to change attitudes, lives and, ultimately, the world.
           </p>
         </div>
-      
+
         <!-- Next/prev buttons -->
         <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>-->
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-      
+
       <!-- Dots/bullets/indicators -->
       <div class="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
       </div>
     </section>
 
@@ -153,7 +153,7 @@
     <section class="fullscreen" id="speakers">
         <h1 class="heading red padleft">Speakers</h1>
         <p class=" padleft description">
-            Thinkers. Doers. Idea-generators. TEDx speakers are people who are willing to inform and inspire, surprise and delight. They come from all sorts of background and have experience in various fields of work. They come up with world changing ideas and give inspiration to million others. For TEDxREVAUniversity, we contacted and invited few such people who are willing to share their ideas with us, and are ready to inspire us. 
+            Thinkers. Doers. Idea-generators. TEDx speakers are people who are willing to inform and inspire, surprise and delight. They come from all sorts of background and have experience in various fields of work. They come up with world changing ideas and give inspiration to million others. For TEDxREVAUniversity, we contacted and invited few such people who are willing to share their ideas with us, and are ready to inspire us.
         </p><br><br>
         <a href="speakers.html"><button class="center xlarge alert">Meet The Speakers</button></a><br><br>
     </section>
@@ -171,7 +171,7 @@
         <h1 class="heading padleft">Get In Touch</h1>
         <div class="col large6">
             <a href="faq.pdf"><h1 class="padleft" style="color:#FFF;">Frequently Asked Questions</h1><br></a>
-            <a href="faq.pdf"><h1 class="padleft" style="color:#FFF;">Privacy Policy</h1></a><br>
+            <a href="pp.pdf"><h1 class="padleft" style="color:#FFF;">Privacy Policy</h1></a><br>
             <h1 class="padleft" style="color:#FFF;">Schedule</h1><br>
             <h1 class="padleft" style="color:#FFF;">Follow Us On</h1><br>
             <div class="col large2"></div>
@@ -179,7 +179,7 @@
             <div class="col"><img src="img/tw.png" class="followicon" /></div>&nbsp;&nbsp;&nbsp;
             <div class="col"><img src="img/ig.png" class="followicon" /></div>
         </div>
-        <div class="col large6">            
+        <div class="col large6">
             <div class="padleft">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15542.89373821591!2d77.6346617!3d13.1166989!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdee225fe28f600f6!2sREVA+University!5e0!3m2!1sen!2sin!4v1522677320198" style="border: none; border-radius:10px; height: 50%; width: 100%; " allowfullscreen="yes"></iframe>
              </div>
