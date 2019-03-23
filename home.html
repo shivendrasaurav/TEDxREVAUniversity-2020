@@ -1,0 +1,198 @@
+<html>
+<head>
+        <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+        <style>
+                .mhead{font-family: "Helvetica Neue Custom", "Helvetica Neue", Helvetica, Arial, sans-serif}
+        </style>
+    <link rel="shortcut icon" href="ted.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEDxREVAUniversity</title>
+    <link href="mars.css" rel="stylesheet" type="text/css">
+    <link href="extrastyle.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <script>
+        var counter=0;
+        function sidenavfunc(){
+            counter++;
+            if(counter%2==0)
+                hidesidenav();
+            else
+                showsidenav();
+        }
+        function showsidenav(){
+            document.getElementById("nav1").style.display=("block");
+            document.getElementById("switch").innerHTML=("X");
+        }
+        function hidesidenav(){
+            document.getElementById("nav1").style.display=("none");
+            document.getElementById("switch").innerHTML=("=");
+        }
+    </script>
+</head>
+<body onload="hidesidenav(); showSlides(1);" style="background:#f7f1de">
+    <div class="floatnav">
+        <a href="https://www.townscript.com/e/tedxrevauniversity-433121"><button class="floattab booknow">Book Now</button></a>
+        <a href="sponsors.html"><button class="floattab">Sponsors</button></a>
+        <a href="#home"><button class="floattab">Home</button></a>
+        <a href="#about"><button class="floattab">About Us</button></a>
+        <a href="#fables"><button class="floattab">Fables</button></a>
+        <a href="#speakers"><button class="floattab">Speakers</button></a>
+        <a href="#team"><button class="floattab">Team</button></a>
+        <a href="#contact"><button class="floattab">Contact Us</button></a>
+    </div>
+    <div class="sidenav inverted">
+        <div class="row"><span class="left">&nbsp;&nbsp;</span><button id="switch" style="font-size:28px;" class="mico inverted left" onclick="sidenavfunc();">=</button>        
+        </div>
+        <div id="nav1">
+            <a href="sponsors.html"><div class="mtab">Sponsors</div></a>
+            <a href="#home"><div class="mtab" onclick="hidesidenav();">Home</div></a>
+            <a href="#about"><div class="mtab" onclick="hidesidenav();">About Us</div></a>
+            <a href="#fables"><div class="mtab" onclick="hidesidenav();">Fables</div></a>
+            <a href="#speakers"><div class="mtab" onclick="hidesidenav();">Speakers</div></a>
+            <a href="#team"><div class="mtab" onclick="hidesidenav();">Team</div></a>
+            <a href="#contact"><div class="mtab" onclick="hidesidenav();">Contact Us</div></a>                       
+        </div>
+    </div>
+
+
+    <section class="fullscreen" id="home">
+        <div class="heading padleft mhead" style="z-index: 1 ;margin-top: 16%;"><font color="red">TEDx</font>REVAUniversity</div>
+        <br><div class="date padleft">5th April, 2019</div>
+        <video src="background.mp4" class="backvid" autoplay loop muted ></video>
+    </section><br><br><br><br>
+
+
+    <section class="fullscreen" id="about">
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+        <!-- Full-width slides/quotes -->
+        <div class="mySlides padleft">
+            <h1 class="heading red">About TED</h1>
+            <p class="description">
+                    TED is a global non-profit organization to uphold the spirit of
+                    'Ideas Worth Spreading '. It was started in 1984 as a small conference
+                    bringing together people from three worlds: Technology Entertainment
+                    and Design, to talk about how their ideas were converging. The annual
+                    TED conference invites world's leading thinkers and Doers. TED has been
+                   host to an illustrious repertoire of speakers including Bill Clinton,
+                   Al Gore, Gordon Brown, Billy Graham, Richard Dawkins, Richard Stallman,
+                        and Bill Gates.
+            </p>
+        </div>
+      
+        <div class="mySlides padleft">
+                <h1 class="heading red">About TEDx</h1>
+                <p class="description">
+                        In the spirit of ideas worth spreading, TEDx is a program of local,
+                        self-organized events that bring people together to share a TED-like
+                        experience. At a TEDx event, TED Talks video and live speakers combine
+                        to spark deep discussion and connection. These local, self-organized
+                        events are branded TEDx, where x = independently organized TED event.
+                        The TED Conference provides general guidance for the TEDx program,
+                            but individual TEDx events are self-organized.
+                </p>
+        </div>
+      
+        <div class="mySlides padleft">
+                <h1 class="heading red">About TEDxREVAUniversity</h1>
+          <p class="description">
+                TEDxREVAUniversity is an independently organised TED event. This TEDx event is an collective endeavour of students from different schools of REVA University. The aim of this event is to share great stories and diversified ideas to our community of 10,000+ students, faculties and staff in order to inspire them to innovate and to bring the change they want to see in the world. The event will take place in the newly renovated, state of the art, Kuvempu Auditorium in REVA University, Bengaluru. The event will feature a number of speakers from various disciplines and cultures, who will narrate their stories and share their ideas with people who seek a deeper understanding of the world. We believe and promote TED’s mission of 'spreading ideas’ and their agenda to make great ideas accessible and spark conversation. TEDxREVAUniversity will present ideas which are powerful enough to change attitudes, lives and, ultimately, the world.
+          </p>
+        </div>
+      
+        <!-- Next/prev buttons -->
+        <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>-->
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
+      <!-- Dots/bullets/indicators -->
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+    </section>
+
+
+    <section class="fullscreen" id="fables">
+        <h1 class="heading red padleft">Fables</h1>
+        <p class=" padleft description">
+            Usually, fables are the stories that features inanimate objects and forces of nature that are brought to life and that illustrates or leads to a particular moral lesson and takes us through a lifelike journey, portraying good and evil and we absorb an understanding of importance of right and wrong. But similarly every individual have a story, some short and some long, where they live and love, make mistake, win and fail, where the choices made by them lead to an effect as an consequences of the decisions made and choices taken. These effects teaches us many lessons and gives us many ideas. The ideas that are learnt are applicable to all and always contain the good and right choices of life, hence they must be spread to fill the world with good and right and every story is worth hearing.
+        </p>
+    </section>
+
+
+    <section class="fullscreen" id="speakers">
+        <h1 class="heading red padleft">Speakers</h1>
+        <p class=" padleft description">
+            Thinkers. Doers. Idea-generators. TEDx speakers are people who are willing to inform and inspire, surprise and delight. They come from all sorts of background and have experience in various fields of work. They come up with world changing ideas and give inspiration to million others. For TEDxREVAUniversity, we contacted and invited few such people who are willing to share their ideas with us, and are ready to inspire us. 
+        </p><br><br>
+        <a href="speakers.html"><button class="center xlarge alert">Meet The Speakers</button></a><br><br>
+    </section>
+
+
+    <section class="fullscreen" id="team">
+        <h1 class="heading red padleft">The Team</h1>
+        <p class=" padleft description">
+            To host an event of this magnitude, we needed a team. A team which would stuck together in hard times and help each other out. So, we searched for them, and gathered the best people of their fields. We worked together and here we are, ready to face the challenge, ready to pull this off and shine above all.         </p><br><br>
+            <a href="team.html"><button class="center xlarge alert">Meet Our Team</button></a><br><br>
+    </section>
+
+
+    <section class="fullscreen primary" id="contact">
+        <h1 class="heading padleft">Get In Touch</h1>
+        <div class="col large6">
+            <a href="faq.pdf"><h1 class="padleft" style="color:#FFF;">Frequently Asked Questions</h1><br></a>
+            <a href="faq.pdf"><h1 class="padleft" style="color:#FFF;">Privacy Policy</h1></a><br>
+            <h1 class="padleft" style="color:#FFF;">Schedule</h1><br>
+            <h1 class="padleft" style="color:#FFF;">Follow Us On</h1><br>
+            <div class="col large2"></div>
+            &nbsp;&nbsp;<div class="col"><img src="img/fb.png" class="followicon" /></div>&nbsp;&nbsp;&nbsp;
+            <div class="col"><img src="img/tw.png" class="followicon" /></div>&nbsp;&nbsp;&nbsp;
+            <div class="col"><img src="img/ig.png" class="followicon" /></div>
+        </div>
+        <div class="col large6">            
+            <div class="padleft">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15542.89373821591!2d77.6346617!3d13.1166989!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdee225fe28f600f6!2sREVA+University!5e0!3m2!1sen!2sin!4v1522677320198" style="border: none; border-radius:10px; height: 50%; width: 100%; " allowfullscreen="yes"></iframe>
+             </div>
+        </div><br><br><br><br>
+        <div class="alert" style="margin-top:2%">
+        <div class="col large7">
+                <h3 style="color: aliceblue" class="padleft">This independent TEDx event is operated under license from TED.</h3>
+        </div>
+        <div class="col large4">
+                <h3 style="color: aliceblue" class="padleft">&copy; TEDxREVAUniversity 2019</h3>
+        </div>
+        </div>
+    </section>
+    <a href="https://www.townscript.com/e/tedxrevauniversity-433121"><img class="bnbut polaroid" src="img/tick.png" /></a>
+</body>
+</html>
