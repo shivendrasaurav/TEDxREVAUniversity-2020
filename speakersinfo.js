@@ -67,3 +67,10 @@ function openmodal10(){
 function closemodal10(){
     document.getElementById("mod10").style.display=("none");
 }
+
+function openmodal11(){
+    document.getElementById("mod11").style.display=("block");
+        }
+function closemodal11(){
+    document.getElementById("mod11").style.display=("none");
+}
