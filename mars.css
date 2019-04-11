@@ -197,7 +197,12 @@ button.alert:hover{
   background: #FFF;
   color: red;
 }
-
+button.success:hover{
+    border: 2px solid green;
+    background: #FFF;
+    color: green;
+  }
+  
 .small{ min-width: 80px; height: 40px; font-size: 16px;}
 .large{ min-width: 160px; height: 80px; font-size: 32px;}
 .circular{ border-radius: 90px;}
