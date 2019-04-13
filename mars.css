@@ -391,3 +391,20 @@ a,a:visited,a:active{color:initial; text-decoration:none;}
   margin: auto;
   transition: 300ms;
 }
+.gallerymodimg{
+    width:80%;
+    
+}
+
+.galleryicon{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    color:white;
+    font-size:32px;
+}
+.galleryimg{
+    width: 100%;
+    height: 200px;
+    margin: 12px;
+}
