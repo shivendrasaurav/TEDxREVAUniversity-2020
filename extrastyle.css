@@ -1,32 +1,8 @@
 
-    .padleft{
-        margin-left: 120px;
-        display: inline-block;
-        width: 80%;
-    }
-    .heading{
-        font-size: 84px;
-        color: #FFF;
-        display: inline-block;
-    }        
-    .date{
-        border: #FFF solid 4px;
-        color: white;
-        font-size: 48px;
-        width: 500px;
-        text-align: center;
-    }
-@media (max-width: 360px) {
-      .heading{font-size:26px;}
-      .date{font-size: 22px;}
-}
-@media (min-width: 377px) and (max-width:600px) {
-  .heading{font-size:36px;}
-  .date{font-size: 32px;}
-}
-@media (min-width: 361px) and (max-width:376px) {
-  .heading{font-size:32px;}
-  .date{font-size: 28px;}
+.padleft{
+    margin-left: 120px;
+    display: inline-block;
+    width: 80%;
 }
 
 @media (max-width: 600px) {
@@ -42,35 +18,53 @@
         position: fixed;
         bottom: 40px;
         right: 20px;
-        background: red;
+        background: #cc2936;
         border-radius: 100%;
         height:80px;
         width:80px;
     }
-    .date{
-        border: #FFF solid 4px;
-        color: white;
-        width: 60%;
-        text-align: center;
-    }    
     .padleft{
         margin-left: 10px;
     }
-    .heading{
-        color: #FFF;
-        display: inline-block;
-    }
     a,a:hover,a:visited{color:#FFF;}
 }
-@media (min-width:600px){.bnbut{display: none;}}
+@media (min-width:600px){.bnbut{display: none;}
+
+}
 #home{
-  background: url('img/ted1.jpg');
-  background-attachment: fixed;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue';
+  background: #343434;
   height: 104%;
 }
-.heading.red{
-    color: red;
+.circle{
+  border-radius: 100%;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin: 4px;
+  border: 5px solid white;
 }
+.heading{
+  position: relative;
+  padding-top: 10%;
+  text-align: center;
+  font-size: 42px;
+  color: #EFEFEF;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue';
+}
+.timer{
+  position: relative;
+  text-align: center;
+  color: #EFEFEF;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue';
+}
+.timer .number{
+  font-size: 72px;
+}
+.red,.heading .red{
+    color: #cc2936;
+}
+
 .description{
     font-size: 24px;
 }
@@ -91,7 +85,7 @@
     width: auto;
     margin-top: -30px;
     padding: 16px;
-    color: #888;
+    color: #fff;
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
@@ -104,13 +98,13 @@
     right: 0;
     border-radius: 3px 0 0 3px;
     background: #000;
-    color: red;
+    color: #cc2936;
   }
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
     background-color: #000;
-    color: red;
+    color: #cc2936;
   }
   
   /* The dot/bullet/indicator container */
@@ -133,7 +127,7 @@
   
   /* Add a background color to the active dot/circle */
   .active, .dot:hover {
-    background-color: red;
+    background-color: #cc2936;
   }
 .sponsor{
   height: 300px;

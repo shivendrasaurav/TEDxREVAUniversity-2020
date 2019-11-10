@@ -1,10 +1,12 @@
 *{
     box-sizing: border-box;
     transition: 300ms;
+}
+
+body{ background: #fefefe; 
     font-family: 'Comfortaa', cursive;
 }
 
-body{ background: #fdfde8; }
 
 .inverted{background: #000; color: #FFF;}
 .primary{ background: #193c50; color: #ffe100; }
@@ -28,25 +30,6 @@ body{ background: #fdfde8; }
 
 .col{display: inline-block;}
 
-@media (max-width: 500px) {
-    .large1,.large2,.large3,.large4,.large5,.large6,.large7,.large8,.large9,.large10,.large11,.large12{width: 100%; }
-    .fullscreen{
-        min-width: 104%;
-        height: auto;
-        margin:-2%;
-        padding: 15px;
-    }
-}
-
-@media (min-width: 501px) and (max-width: 1000px) {
-    .row{display: flex;}
-    .large1,.large2{width: 15%; flex: 0;}
-    .large3,.large4{width: 30%; }
-    .large5,.large6{width: 45%; }
-    .large7,.large8{width: 60%; }
-    .large9,.large10{width: 85%; }
-    .large11,.large12{width: 95%; }
-}
 
 @media (min-width: 1000px) {
     .row{display: flex;}
@@ -63,6 +46,27 @@ body{ background: #fdfde8; }
     .large11{width: 91.66667%; }
     .large12{width: 96%; }
 }
+
+@media (min-width: 501px) and (max-width: 1000px) {
+    .row{display: flex;}
+    .large1,.large2{width: 15%; flex: 0;}
+    .large3,.large4{width: 30%; }
+    .large5,.large6{width: 45%; }
+    .large7,.large8{width: 60%; }
+    .large9,.large10{width: 85%; }
+    .large11,.large12{width: 95%; }
+}
+@media (max-width: 500px) {
+    .large1,.large2,.large3,.large4,.large5,.large6,.large7,.large8,.large9,.large10,.large11,.large12{width: 100%; }
+    .fullscreen{
+        min-width: 104%;
+        height: auto;
+        margin:-2%;
+        padding: 15px;
+    }
+}
+
+
 
 
 label{
@@ -193,9 +197,9 @@ button.secondary:focus{
     background: #ffe100 ;
 }
 button.alert:hover{
-  border: 2px solid red;
+  border: 2px solid #cc2936;
   background: #FFF;
-  color: red;
+  color: #cc2936;
 }
 button.success:hover{
     border: 2px solid green;
@@ -231,8 +235,8 @@ button.primary.tab:focus{
     height: 50px;
     font-size: 4px;
     min-width: 50px;
-    background: red;
-    color: red;
+    background: #cc2936;
+    color: #cc2936;
     margin: 2px;
 }
 .floattab.booknow{
@@ -241,7 +245,7 @@ button.primary.tab:focus{
 }
 .floattab:hover{
     font-size: 24px;
-    color: wheat;
+    color: #FFF;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media (min-width: 700px) {
@@ -341,7 +345,7 @@ a,a:visited,a:active{color:initial; text-decoration:none;}
     margin: 4px;
 }
 .name:hover{
-    background: red;
+    background: #cc2936;
     color: #FFF;
 }
 .overlaycontainer:hover .overlay{
