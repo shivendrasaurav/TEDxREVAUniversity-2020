@@ -35,7 +35,7 @@
   font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue';
 	background: linear-gradient(-30deg, #e6404e, #f11a49 , #121212, #121212, #000, #cc2936);
 	background-size: 400% 400%;
-  animation: gradientBG 30s ease-in-out infinite;
+  animation: gradientBG 12s ease-in-out infinite;
   height: 104%;
 }
 .circle{
