@@ -1,11 +1,13 @@
 *{
     box-sizing: border-box;
     transition: 300ms;
+    
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue';
 }
 
-body{ background: #fefefe; 
-    font-family: 'Comfortaa', cursive;
+body{ background: #fefefe;
 }
+p.jfy{text-align: justify;}
 
 
 .inverted{background: #000; color: #FFF;}

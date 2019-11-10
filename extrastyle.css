@@ -33,7 +33,9 @@
 }
 #home{
   font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue';
-  background: #343434;
+	background: linear-gradient(-45deg, #e6404e, #f11a49 , #121212, #121212, #000, #cc2936);
+	background-size: 400% 400%;
+	animation: gradientBG 40s ease-in-out infinite;
   height: 104%;
 }
 .circle{
@@ -46,7 +48,7 @@
 }
 .heading{
   position: relative;
-  padding-top: 10%;
+  padding-top: 7.5%;
   text-align: center;
   font-size: 42px;
   color: #EFEFEF;
@@ -64,6 +66,32 @@
 .red,.heading .red{
     color: #cc2936;
 }
+.book{
+  display: block;
+  margin: auto;
+}
+
+/*body {
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+}
+*/
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 .description{
     font-size: 24px;
