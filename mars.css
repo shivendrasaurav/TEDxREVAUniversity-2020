@@ -335,11 +335,11 @@ a,a:visited,a:active{color:initial; text-decoration:none;}
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
 }
 .person{
-    height: 300px;
+    height: 250px;
     width: 80%;
     display: block;
     margin: auto;
-    padding: 4px;
+    /* padding: 4px; */
 }
 .name{
     padding: 4px;
