@@ -172,3 +172,8 @@
   top:0;
   left:0;
 }
+.page_container{
+  width: 80%;
+  display: block;
+  margin: auto;
+}
