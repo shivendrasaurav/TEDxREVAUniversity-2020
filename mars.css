@@ -2,7 +2,7 @@
     box-sizing: border-box;
     transition: 300ms;
     
-  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue';
+  font-family:'Calibri', 'Roboto', 'Helvetica Neue';
 }
 
 body{ background: #fefefe;
